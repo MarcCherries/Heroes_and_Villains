@@ -31,7 +31,7 @@ def character_detail(request, pk):
        serializer = CharacterSerializer(character)
        return Response(serializer.data, status=status.HTTP_200_OK)
     elif request.method == 'PUT':
-        serializer = CharacterSerializer(Character, data=request.data)
+        serializer = CharacterSerializer(character, data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data, status=status.HTTP_201_CREATED)
