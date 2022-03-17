@@ -7,7 +7,6 @@ from .models import Character
 from rest_framework import status
 from django.shortcuts import get_object_or_404
 
-from supers import serializer
 
 
 

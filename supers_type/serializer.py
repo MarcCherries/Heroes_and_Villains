@@ -1,5 +1,5 @@
 import imp
-from supers_type.models import SuperType
+from .models import SuperType
 from rest_framework import serializers
 
 
